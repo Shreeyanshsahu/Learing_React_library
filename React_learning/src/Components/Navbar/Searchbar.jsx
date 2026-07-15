@@ -2,7 +2,7 @@ import "../../index.css";
 import { Search } from "lucide-react";
 function Searchbar() {
     return (
-        <div className="flex items-center justify-center md:w-[50rem] max-md:w-full">
+        <div className="flex items-center justify-center md:w-200 max-md:w-full">
             <input
                 type="text"
                 placeholder="Search"
