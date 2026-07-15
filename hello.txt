@@ -1,0 +1,28 @@
+https://youtube.com/shorts/X_Id3H8XB-A?si=qQkmJLypTGt3NMXg
+https://youtube.com/shorts/3qIUNmPcwxE?si=rEfHsNsSenxUKcK4
+
+    //this is a fragment, it is used to wrap multiple 
+    // elements without adding an extra node to the DOM
+    //<> </> is a shorthand for <React.Fragment></React.Fragment>
+    // we can only return one element from a component, 
+    // so we use fragments to wrap multiple elements
+
+
+    //best practice is to use fragments when we want to
+    //  return multiple elements from a component, 
+    // but we don't want to add an extra node to the DOM.
+
+    // We need to keep Capital letter for the component name,
+    //  otherwise it will be treated as a regular HTML tag and will not work as a component.
+    //file name should be jsx and component name should be same as file name,
+
+    //jsx = js + html, it is a syntax extension for JavaScript,
+    // it allows us to write HTML in JavaScript, 
+    // and it will be transpiled to regular JavaScript by Babel.
+
+    // we can use {} to embed expressions in JSX, 
+    // and we can use {} to embed JavaScript expressions in JSX.
+
+
+    //assets hold the frequently used images icons svg and public story animatio videos and images eetc
+    
