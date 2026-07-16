@@ -1,5 +1,4 @@
 import "../../index.css";
-import { useState } from "react";
 import { Search } from "lucide-react";
 function Searchbar({ mobile }) {
     return (

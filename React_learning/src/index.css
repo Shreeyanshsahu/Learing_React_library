@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-lobster: "Lobster Two", sans-serif;
 }
 
@@ -21,4 +21,15 @@ body,
 
 body {
   overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
