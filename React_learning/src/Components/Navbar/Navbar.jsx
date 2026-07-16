@@ -9,7 +9,7 @@ function Navbar({ mobile }) {
       className="navbar
         w-full
         px-4
-        py-3
+        py-2
         bg-white/10
         backdrop-blur-lg
         border border-white/20

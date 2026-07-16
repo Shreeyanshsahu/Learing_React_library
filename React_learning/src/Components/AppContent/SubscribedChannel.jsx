@@ -1,6 +1,6 @@
 import "../../index.css";
 import Userinfo from "../Navbar/Userinfo";
-function SubscribedChannel({ mobile,sidebar }) {
+function SubscribedChannel({ mobile, sidebar, subscribedChannels }) {
 
     return (
         <div className={`flex
@@ -16,13 +16,14 @@ function SubscribedChannel({ mobile,sidebar }) {
           w-full
           flex-1
           `}>
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
-            <Userinfo mobile={mobile} sidebar={sidebar} />
+            {subscribedChannels.map((subscriber) => (
+                <Userinfo
+                    key={subscriber.id}
+                    sidebar={sidebar}
+                    subscriberInfo={subscriber}
+                    mobile={mobile}
+                />
+            ))}
         </div>
     )
 }
