@@ -1,9 +1,10 @@
 import "../../index.css";
-
+import { useState } from "react";
 import Logo from "./Logo.jsx";
 import Searchbar from "./Searchbar.jsx";
 import Userinfo from "./Userinfo.jsx";
-function Navbar() {
+function Navbar({ mobile }) {
+  const [isMobile, setIsMobile] = useState(mobile);
   return (
     <div
       className="navbar
@@ -15,15 +16,15 @@ function Navbar() {
         shadow-lg
         rounded-3xl
         justify-between
-        flex flex-col
-        md:flex-row
+        flex 
         md:items-center
         md:justify-between
         gap-4
       ">
-      <Logo />
-      <Searchbar />
-      <Userinfo />
+      <Logo mobile={mobile} />
+      <Searchbar mobile={mobile} />
+      <Userinfo mobile={mobile} />
+
     </div>
   );
 }
